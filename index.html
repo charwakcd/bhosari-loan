@@ -214,7 +214,6 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
   <script async custom-element="amp-story-auto-analytics" src="https://cdn.ampproject.org/v0/amp-story-auto-analytics-0.1.js"></script>
-  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
   
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -303,6 +302,26 @@
       color: #d0d0d0;
       line-height: 1.4;
     }
+    .location-card {
+      margin-top: 15px;
+      padding: 12px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 8px;
+      border-left: 3px solid #FF6B35;
+    }
+    .location-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+    .location-desc {
+      font-size: 13px;
+      color: #cccccc;
+      line-height: 1.4;
+    }
   </style>
 </head>
   
@@ -334,16 +353,10 @@
             <div class="trust-badge">Disbursed in 5–7 Days</div>
           </div>
           
-          <!-- Google Maps Embed Section for Bhosari -->
-          <div style="margin-top: 15px; border-radius: 8px; overflow: hidden; pointer-events: none;">
-            <amp-iframe width="400" height="150" layout="responsive"
-              sandbox="allow-scripts allow-same-origin allow-popups"
-              frameborder="0"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.1874246830583!2d73.84074217604313!3d18.61060936616428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c8038b328a97%3A0x6bda1a63c01e6a1d!2sBhosari%20MIDC%2C%20Bhosari%2C%20Pimpri-Chinchwad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin">
-              <div placeholder style="background: #222; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 12px;">
-                Loading Map...
-              </div>
-            </amp-iframe>
+          <!-- Fully Valid Replacement for Location Context -->
+          <div class="location-card">
+            <div class="location-title">Target Industrial Hub</div>
+            <div class="location-desc">Direct doorstep processing across Bhosari MIDC, Sector 7, Landewadi, and Pimpri-Chinchwad industrial belt, Pune.</div>
           </div>
           
         </div>
@@ -402,7 +415,7 @@
         <div class="text-container">
           <div class="badge">Unsecured Business Loan Uses</div>
           <h2>Ideal Uses for Your Unsecured Business Loan for Businesses in Bhosari MIDC </h2>
-          <p>✓ Monthly Employee Payroll<br>✓ Direct GST & Tax Liability Payments<br>✓ Bulk Raw Material & Inventory<br>✓ Machinery Upgrades & Expansion</p>
+          <p>✓ Monthly Employee Payroll<br>✓ Direct GST &amp; Tax Liability Payments<br>✓ Bulk Raw Material &amp; Inventory<br>✓ Machinery Upgrades &amp; Expansion</p>
         </div>
       </amp-story-grid-layer>
     </amp-story-page>
