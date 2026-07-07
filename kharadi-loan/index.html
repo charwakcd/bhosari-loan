@@ -262,7 +262,7 @@
         "position": 1,
         "name": "Home",
         "item": "https://charwakcd.github.io/"
-      },
+      }
       {
         "@type": "ListItem",
         "position": 2,
@@ -374,6 +374,8 @@
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&auto=format&fit=crop&w=640&h=853&q=95" />
 
   <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <!-- NEW SCRIPT: Required for rendering Google Maps in AMP -->
+  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
   <script async custom-element="amp-story-auto-analytics" src="https://cdn.ampproject.org/v0/amp-story-auto-analytics-0.1.js"></script>
 
@@ -469,6 +471,16 @@
           <div class="badge">Kharadi · Pune</div>
           <h1>Unsecured Business Loan Near Kharadi — Up to ₹45 Lakhs</h1>
           <p>Fast, collateral-free Business Loan for IT firms, MSMEs, and service businesses near EON IT Park Near Kharadi. No property pledge. Minimal documentation.</p>
+          
+          <!-- NEW: Google Map embed. Using pointer-events:none to ensure the map doesn't block the user's tap-to-advance functionality for the AMP story -->
+          <div style="margin-top: 15px; border-radius: 8px; overflow: hidden; pointer-events: none;">
+            <amp-iframe width="400" height="150" layout="responsive"
+              sandbox="allow-scripts allow-same-origin"
+              frameborder="0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30264.4682054238!2d73.9182379!3d18.5492193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3c6b29dbb7b%3A0x86bd7d0fa04bc089!2sKharadi%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin">
+            </amp-iframe>
+          </div>
+          
         </div>
       </amp-story-grid-layer>
       <amp-story-page-outlink layout="nodisplay">
