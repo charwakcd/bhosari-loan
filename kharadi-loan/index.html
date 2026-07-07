@@ -26,6 +26,7 @@
   <!-- hreflang -->
   <link rel="alternate" hreflang="en-in" href="https://charwakcd.github.io/bhosari-loan/kharadi-loan/" />
 
+  <!-- 1. NewsArticle Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -105,7 +106,7 @@
   }
   </script>
 
-  <!-- FAQPage Schema -->
+  <!-- 2. FAQPage Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -179,7 +180,7 @@
   }
   </script>
 
-  <!-- LocalBusiness + FinancialService Schema -->
+  <!-- 3. LocalBusiness + FinancialService Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -251,7 +252,7 @@
   }
   </script>
 
-  <!-- BreadcrumbList Schema -->
+  <!-- 4. BreadcrumbList Schema (FIXED Missing Comma Error) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -262,7 +263,7 @@
         "position": 1,
         "name": "Home",
         "item": "https://charwakcd.github.io/"
-      }
+      },
       {
         "@type": "ListItem",
         "position": 2,
@@ -279,7 +280,7 @@
   }
   </script>
 
-  <!-- Service Schema — Consultant role clearly signalled -->
+  <!-- 5. Service Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -310,7 +311,7 @@
   }
   </script>
 
-  <!-- LoanOrCredit Schema — product context facilitated by consultant -->
+  <!-- 6. LoanOrCredit Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -374,8 +375,6 @@
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&auto=format&fit=crop&w=640&h=853&q=95" />
 
   <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <!-- NEW SCRIPT: Required for rendering Google Maps in AMP -->
-  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
   <script async custom-element="amp-story-auto-analytics" src="https://cdn.ampproject.org/v0/amp-story-auto-analytics-0.1.js"></script>
 
@@ -445,6 +444,27 @@
       letter-spacing: 0.5px;
       text-transform: uppercase;
     }
+    /* Fixed Valid Local Card Variant */
+    .location-hub-card {
+      margin-top: 15px;
+      padding: 12px;
+      background: rgba(255, 215, 0, 0.1);
+      border-radius: 8px;
+      border-left: 3px solid #FFD700;
+    }
+    .hub-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #FFD700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+    .hub-desc {
+      font-size: 13px;
+      color: #e0e0e0;
+      line-height: 1.4;
+    }
   </style>
 </head>
 
@@ -457,6 +477,7 @@
     poster-portrait-src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&auto=format&fit=crop&w=640&h=853&q=95"
   >
 
+    <!-- SLIDE 1 -->
     <amp-story-page id="page-1" auto-advance-after="5s">
       <amp-story-grid-layer template="fill">
         <amp-img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&auto=format&fit=crop&w=640&h=853&q=95"
@@ -472,16 +493,10 @@
           <h1>Unsecured Business Loan Near Kharadi — Up to ₹45 Lakhs</h1>
           <p>Fast, collateral-free Business Loan for IT firms, MSMEs, and service businesses near EON IT Park Near Kharadi. No property pledge. Minimal documentation.</p>
           
-          <!-- NEW: Google Map embed. Using pointer-events:none to ensure the map doesn't block the user's tap-to-advance functionality for the AMP story -->
-          <div style="margin-top: 15px; border-radius: 8px; overflow: hidden; pointer-events: none;">
-            <amp-iframe width="400" height="150" layout="responsive"
-              sandbox="allow-scripts allow-same-origin allow-popups"
-              frameborder="0"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.1643901962363!2d73.94635101489344!3d18.566649887382496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1404d80582f%3A0x868b44618e4785e2!2sKharadi%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin">
-              <div placeholder style="background: #222; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #fff;">
-                Loading Map...
-              </div>
-            </amp-iframe>
+          <!-- FIXED: Replaced invalid amp-iframe with highly targeted visual location card -->
+          <div class="location-hub-card">
+            <div class="hub-title">Local Priority Processing Zone</div>
+            <div class="hub-desc">Providing on-site document collection across EON IT Park (Phase 1 &amp; 2), World Trade Center (WTC), Gera Commerzone, and bypass clusters.</div>
           </div>
           
         </div>
@@ -491,10 +506,11 @@
       </amp-story-page-outlink>
     </amp-story-page>
 
+    <!-- SLIDE 2 -->
     <amp-story-page id="page-2" auto-advance-after="5s">
       <amp-story-grid-layer template="fill">
         <amp-img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=640&h=853&q=95&sat=50&con=20"
-          width="640" height="853" layout="fill" alt="Corporate office towers in Kharadi Pune lokking for Business Loan  ">
+          width="640" height="853" layout="fill" alt="Corporate office towers in Kharadi Pune looking for Business Loan">
         </amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="fill">
@@ -502,13 +518,14 @@
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <div class="text-container">
-          <div class="badge"> Apply High-Limit Unsecured Loan Funding</div>
-          <h2>Corporate Loan Up to ₹45 Lakhs — No Collateral Nearby Kharadi </h2>
+          <div class="badge">Apply High-Limit Unsecured Loan Funding</div>
+          <h2>Corporate Loan Up to ₹45 Lakhs — No Collateral Nearby Kharadi</h2>
           <p>Access instant unsecured business loans built for service companies, IT vendors, and corporate operators in Kharadi. Funding disbursed fast within 5–7 working days.</p>
         </div>
       </amp-story-grid-layer>
     </amp-story-page>
 
+    <!-- SLIDE 3 -->
     <amp-story-page id="page-3" auto-advance-after="5s">
       <amp-story-grid-layer template="fill">
         <amp-img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=640&h=853&q=95"
@@ -520,7 +537,7 @@
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <div class="text-container">
-          <div class="badge"> Business Loans for IT Park  </div>
+          <div class="badge">Business Loans for IT Park</div>
           <h2>Business Loan Designed for Kharadi IT Ecosystem Vendors</h2>
           <p>Business Loans tailored for software consultants, BPO vendors, payroll processors, and logistics providers serving EON IT Park clients. Secure ₹10–45 Lakhs easily.</p>
         </div>
@@ -530,6 +547,7 @@
       </amp-story-page-outlink>
     </amp-story-page>
 
+    <!-- SLIDE 4 -->
     <amp-story-page id="page-4" auto-advance-after="5s">
       <amp-story-grid-layer template="fill">
         <amp-img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=640&h=853&q=95"
@@ -541,13 +559,14 @@
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <div class="text-container">
-          <div class="badge">Working Capital Loan near Kharadi </div>
-          <h2>Bridge Every Cash Flow Gap — ₹10 to ₹45 Lakhs via Unsecured Collateral Free Loan  </h2>
+          <div class="badge">Working Capital Loan near Kharadi</div>
+          <h2>Bridge Every Cash Flow Gap — ₹10 to ₹45 Lakhs via Unsecured Collateral Free Loan</h2>
           <p>Cover software licensing costs, payroll overruns, vendor advance payments, and bulk inventory procurement. Structured Business Loan repayment tenures from 12 to 48 months.</p>
         </div>
       </amp-story-grid-layer>
     </amp-story-page>
 
+    <!-- SLIDE 5 -->
     <amp-story-page id="page-5" auto-advance-after="5s">
       <amp-story-grid-layer template="fill">
         <amp-img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=640&h=853&q=95"
@@ -559,13 +578,14 @@
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <div class="text-container">
-          <div class="badge">Partnership Firm,Company -Unsecured Business Loan </div>
+          <div class="badge">Partnership Firm,Company -Unsecured Business Loan</div>
           <h2>Structured Business Loans for Registered Businesses in Kharadi</h2>
           <p>Private Limited companies, LLPs, and One Person Companies with 2+ years of ITR history qualify. No equity dilution, no director property guarantee.</p>
         </div>
       </amp-story-grid-layer>
     </amp-story-page>
 
+    <!-- SLIDE 6 -->
     <amp-story-page id="page-6" auto-advance-after="5s">
       <amp-story-grid-layer template="fill">
         <amp-img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=640&h=853&q=95"
