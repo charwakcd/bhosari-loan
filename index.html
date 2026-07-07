@@ -344,9 +344,14 @@
   <meta name="twitter:description" content="Get an instant unsecured factory or commercial business loan up to 45 Lakhs in Bhosari MIDC without collateral." />
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=640&h=853&q=95" />
 
+  <!-- Core Component Engine Scripts -->
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
   <script async custom-element="amp-story-auto-analytics" src="https://cdn.ampproject.org/v0/amp-story-auto-analytics-0.1.js"></script>
+  
+  <!-- Critical Fixed Head Injections to enable valid Iframe rendering in AMP Web Stories -->
+  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+  <script async custom-element="amp-story-page-attachment" src="https://cdn.ampproject.org/v0/amp-story-page-attachment-0.1.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -556,8 +561,8 @@
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <!-- PAGE 6: CALL TO ADVISOR DIRECTIVE -->
-    <amp-story-page id="page-6" auto-advance-after="5s">
+    <!-- PAGE 6: HIGH CONVERSION DRAPER CONFLICT RESOLUTION (FIXED FOR SEARCH CONSOLE) -->
+    <amp-story-page id="page-6">
       <amp-story-grid-layer template="fill">
         <amp-img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=640&h=853&q=95"
           width="640" height="853" layout="fill" alt="Senior industrial financial consultant advising business owner on Bhosari unsecured credit limits">
@@ -566,16 +571,27 @@
       <amp-story-grid-layer template="fill">
         <div class="overlay-gradient"></div>
       </amp-story-grid-layer>
+      
+      <!-- The text grid layer contains absolutely NO amp-iframe tags now, resolving the validation conflict -->
       <amp-story-grid-layer template="vertical">
         <div class="text-container">
           <div class="badge">Free Consultation</div>
           <h2>Talk to a Bhosari Loan Agent Specialist — Today</h2>
-          <p>Get a free eligibility check for unsecured Business Loan within minutes. Our advisors guide you through documentation, lender selection, and fastest disbursement path.</p>
+          <p>Swipe up right now to open our fast application verification framework and lock down your industrial eligibility matching metrics instantly.</p>
         </div>
       </amp-story-grid-layer>
-      <amp-story-page-outlink layout="nodisplay">
-        <a href="https://api.whatsapp.com/send?phone=919112098911">Swipe Up — Free Consultation on WhatsApp</a>
-      </amp-story-page-outlink>
+
+      <!-- FIXED DRAWERS SYSTEM: The iframe runs safely embedded inside a bottom layout attachment drawer -->
+      <amp-story-page-attachment layout="nodisplay" theme="dark" data-title="Check Loan Eligibility">
+        <amp-iframe 
+          width="100" 
+          height="100" 
+          layout="responsive" 
+          sandbox="allow-scripts allow-same-origin allow-forms" 
+          src="https://sites.google.com/view/unsecured-business-loan-pune/bhosari-45-lakhs">
+          <amp-img placeholder src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=96&h=96&q=80" layout="fill" alt="Loading secure application frame"></amp-img>
+        </amp-iframe>
+      </amp-story-page-attachment>
     </amp-story-page>
 
     <amp-story-auto-analytics gtag-id="G-CEBH3KZSBQ"></amp-story-auto-analytics>
