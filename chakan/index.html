@@ -97,14 +97,12 @@
       padding: 0;
     }
 
-    /* Fixed Logo Styling for proper visibility */
-    .logo-layer {
-      align-content: start; /* Aligns to top */
-      padding-top: 32px; /* Clears AMP progress bar safely */
-    }
-    
+    /* Fixed Logo Styling for 70% placement */
     .header-logo {
-      margin: 0 auto;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       background: rgba(255, 255, 255, 0.95);
       border-radius: 8px;
       padding: 5px;
@@ -112,6 +110,7 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.4);
       display: flex;
       justify-content: center;
+      z-index: 10;
     }
 
     .overlay-gradient {
@@ -259,8 +258,8 @@
         <div class="overlay-gradient"></div>
       </amp-story-grid-layer>
       
-      <!-- Newly formatted, highly visible, centered Logo Layer -->
-      <amp-story-grid-layer template="vertical" class="logo-layer">
+      <!-- Adjusted to template="fill" for correct absolute positioning -->
+      <amp-story-grid-layer template="fill" class="logo-layer">
         <div class="header-logo">
           <amp-img src="https://img1.wsimg.com/isteam/ip/97a87c93-346c-4ff0-a383-de326f1fc3fb/Charwak%20Logo.png/:/rs=w:150,h:100,cg:true,m/cr=w:150,h:100/qt=q:95" width="150" height="100" layout="intrinsic" alt="Charwak Deshpande Financial Consultant Logo"></amp-img>
         </div>
@@ -300,7 +299,7 @@
         <div class="overlay-gradient"></div>
       </amp-story-grid-layer>
       
-      <amp-story-grid-layer template="vertical" class="logo-layer">
+      <amp-story-grid-layer template="fill" class="logo-layer">
         <div class="header-logo">
           <amp-img src="https://img1.wsimg.com/isteam/ip/97a87c93-346c-4ff0-a383-de326f1fc3fb/Charwak%20Logo.png/:/rs=w:150,h:100,cg:true,m/cr=w:150,h:100/qt=q:95" width="150" height="100" layout="intrinsic" alt="Charwak Deshpande Financial Consultant Logo"></amp-img>
         </div>
@@ -327,7 +326,7 @@
         <div class="overlay-gradient"></div>
       </amp-story-grid-layer>
       
-      <amp-story-grid-layer template="vertical" class="logo-layer">
+      <amp-story-grid-layer template="fill" class="logo-layer">
         <div class="header-logo">
           <amp-img src="https://img1.wsimg.com/isteam/ip/97a87c93-346c-4ff0-a383-de326f1fc3fb/Charwak%20Logo.png/:/rs=w:150,h:100,cg:true,m/cr=w:150,h:100/qt=q:95" width="150" height="100" layout="intrinsic" alt="Charwak Deshpande Financial Consultant Logo"></amp-img>
         </div>
@@ -357,7 +356,7 @@
         <div class="overlay-gradient"></div>
       </amp-story-grid-layer>
       
-      <amp-story-grid-layer template="vertical" class="logo-layer">
+      <amp-story-grid-layer template="fill" class="logo-layer">
         <div class="header-logo">
           <amp-img src="https://img1.wsimg.com/isteam/ip/97a87c93-346c-4ff0-a383-de326f1fc3fb/Charwak%20Logo.png/:/rs=w:150,h:100,cg:true,m/cr=w:150,h:100/qt=q:95" width="150" height="100" layout="intrinsic" alt="Charwak Deshpande Financial Consultant Logo"></amp-img>
         </div>
@@ -384,7 +383,7 @@
         <div class="overlay-gradient"></div>
       </amp-story-grid-layer>
       
-      <amp-story-grid-layer template="vertical" class="logo-layer">
+      <amp-story-grid-layer template="fill" class="logo-layer">
         <div class="header-logo">
           <amp-img src="https://img1.wsimg.com/isteam/ip/97a87c93-346c-4ff0-a383-de326f1fc3fb/Charwak%20Logo.png/:/rs=w:150,h:100,cg:true,m/cr=w:150,h:100/qt=q:95" width="150" height="100" layout="intrinsic" alt="Charwak Deshpande Financial Consultant Logo"></amp-img>
         </div>
@@ -420,7 +419,7 @@
         <div class="overlay-gradient"></div>
       </amp-story-grid-layer>
       
-      <amp-story-grid-layer template="vertical" class="logo-layer">
+      <amp-story-grid-layer template="fill" class="logo-layer">
         <div class="header-logo">
           <amp-img src="https://img1.wsimg.com/isteam/ip/97a87c93-346c-4ff0-a383-de326f1fc3fb/Charwak%20Logo.png/:/rs=w:150,h:100,cg:true,m/cr=w:150,h:100/qt=q:95" width="150" height="100" layout="intrinsic" alt="Charwak Deshpande Financial Consultant Logo"></amp-img>
         </div>
