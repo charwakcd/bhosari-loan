@@ -494,7 +494,12 @@
           <div class="trust-section">
             <div class="trust-badge">Limits Upto ₹45 Lakhs</div>
             <div class="trust-badge">Disbursed in 5–7 Days</div>
-          </div>
+            <div class="trust-badge">
+              <amp-date-display datetime="now" layout="fixed-height" height="14">
+                <template type="amp-mustache">{{day}} {{monthName}} {{year}}</template>
+              </amp-date-display>
+           </div>
+</div>
           
           <div class="location-card">
             <div class="location-title">Service Location Focus</div>
