@@ -315,6 +315,8 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
   <script async custom-element="amp-story-auto-analytics" src="https://cdn.ampproject.org/v0/amp-story-auto-analytics-0.1.js"></script>
+  <script async custom-element="amp-date-display" src="https://cdn.ampproject.org/v0/amp-date-display-0.1.js"></script>
+  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
   
   <!-- Typography & Resource Hints -->
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -495,11 +497,11 @@
             <div class="trust-badge">Limits Upto ₹45 Lakhs</div>
             <div class="trust-badge">Disbursed in 5–7 Days</div>
             <div class="trust-badge">
-              <amp-date-display datetime="now" layout="fixed-height" height="14">
+              <amp-date-display datetime="now" layout="fixed" width="100" height="14">
                 <template type="amp-mustache">{{day}} {{monthName}} {{year}}</template>
               </amp-date-display>
             </div>
-           </div>
+          </div>
           
           <div class="location-card">
             <div class="location-title">Service Location Focus</div>
