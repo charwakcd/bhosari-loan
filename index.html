@@ -40,7 +40,7 @@
   <!-- Preload for LCP Optimization -->
   <link rel="preload" as="image" href="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=1600&q=95" fetchpriority="high" />
 
-  <!-- ===== ENHANCED SCHEMA ===== -->
+  <!-- ===== ENHANCED SCHEMA (SEO + AEO + Generative AI Optimized) ===== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -91,11 +91,19 @@
         },
         "founder": { "@id": "https://www.linkedin.com/in/charwakdeshpande-finance-consultant/" },
         "sameAs": ["https://www.linkedin.com/in/charwakdeshpande-finance-consultant/"],
-        "openingHours": "Mo-Sa 09:00-19:00",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        },
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
-          "reviewCount": "15"
+          "reviewCount": "15",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": "15"
         },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -150,8 +158,61 @@
           "latitude": 18.6348,
           "longitude": 73.8444
         },
+        "geoRadius": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": 18.6348,
+            "longitude": 73.8444
+          },
+          "geoRadius": "15000"
+        },
         "priceRange": "₹10,00,000 – ₹45,00,000",
         "currenciesAccepted": "INR"
+      },
+      {
+        "@type": "Place",
+        "@id": "https://charwakcd.github.io/bhosari-loan/#place",
+        "name": "Bhosari",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bhosari",
+          "addressRegion": "Pune",
+          "addressCountry": "IN",
+          "postalCode": "411026"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 18.6348,
+          "longitude": 73.8444
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://charwakcd.github.io/bhosari-loan/#service",
+        "name": "Unsecured Business Loan Services in Bhosari",
+        "provider": { "@id": "https://charwakcd.github.io/bhosari-loan/#organization" },
+        "serviceType": "Business Loan",
+        "areaServed": { "@type": "Place", "name": "Bhosari, Pune, Maharashtra" },
+        "description": "Collateral-free unsecured business loans up to ₹45 Lakhs for MSMEs and manufacturing units in Bhosari MIDC and nearby areas.",
+        "offers": {
+          "@type": "Offer",
+          "price": "1000000",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Review",
+        "@id": "https://charwakcd.github.io/bhosari-loan/#review",
+        "itemReviewed": { "@id": "https://charwakcd.github.io/bhosari-loan/#service" },
+        "author": { "@type": "Person", "name": "Rajesh Patil" },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "reviewBody": "Got my unsecured business loan approved in 5 days. Excellent service from Charwak Deshpande's team in Bhosari."
       },
       {
         "@type": "WebPage",
