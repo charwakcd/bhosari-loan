@@ -489,7 +489,7 @@
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start {from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start {from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start {from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start {from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start {from{visibility:hidden}to{visibility:visible}}</style>
   <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
-  <!-- ===== ENHANCED STYLING with Lighter Glass Blur ===== -->
+  <!-- ===== ENHANCED STYLING with Brand Header + Lighter Glass Blur ===== -->
   <style amp-custom>
     :root {
       --accent: #FF6B35;
@@ -524,6 +524,38 @@
       background: linear-gradient(180deg, rgba(18, 22, 26, 0.05) 0%, rgba(18, 22, 26, 0.25) 45%, rgba(18, 22, 26, 0.9) 100%);
     }
 
+    /* ==== BRAND HEADER (NEW) ==== */
+    .brand-header {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(0, 0, 0, 0.55);
+      padding: 6px 16px 6px 12px;
+      border-radius: 30px;
+      z-index: 20;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      width: max-content;
+    }
+
+    .brand-name {
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      font-family: var(--font-mono);
+    }
+
+    .brand-header amp-img {
+      border-radius: 50%;
+    }
+
+    /* ==== TEXT CONTAINER (Lighter Glass Blur) ==== */
     .text-container {
       padding: 24px 20px 28px;
       margin: auto 15px 20px;
@@ -820,16 +852,21 @@
     poster-landscape-src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&h=900&q=95"
   >
 
-    <!-- SLIDE 1: HERO -->
+    <!-- ===== SLIDE 1: HERO ===== -->
     <amp-story-page id="page-1" auto-advance-after="6s">
       <amp-story-grid-layer template="fill">
         <amp-img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=720&h=1280&q=95" width="360" height="720" layout="fill" alt="Bhosari industrial unit owner handling working capital operations with a financial consultant"></amp-img>
         <div class="image-overlay"></div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
+        <!-- BRAND HEADER -->
+        <div class="brand-header">
+          <amp-img src="https://img1.wsimg.com/isteam/ip/97a87c93-346c-4ff0-a383-de326f1fc3fb/Charwak%20Logo.png/:/rs=w:150,h:100,cg:true,m/cr=w:150,h:100/qt=q:95" width="36" height="36" layout="fixed" alt="Charwak Deshpande Brand Logo"></amp-img>
+          <span class="brand-name">Charwak Deshpande</span>
+        </div>
         <div class="text-container">
           <div class="badge">Loan Agents &amp; Financial Consultant Near You</div>
-          <p class="brand-name-line">Charwak Deshpande | 25+ Years of Experience in Finance</p>
+          <p class="brand-name-line">25+ Years of Experience in Finance</p>
           <h1>Unsecured Business Loan Upto ₹45 Lakhs in Bhosari &amp; Nearby Areas</h1>
           <p>Profitable engineering firms often lose growth to operational constraints. Connect with our dedicated loan agents near your locality to bridge the liquidity timing gap today without pledging any factory property collateral.</p>
 
@@ -858,16 +895,21 @@
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <!-- SLIDE 2 -->
+    <!-- ===== SLIDE 2 ===== -->
     <amp-story-page id="page-2" auto-advance-after="7s">
       <amp-story-grid-layer template="fill">
         <amp-img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=720&h=1280&q=80" width="360" height="720" layout="fill" alt="Industrial supply chains facing capital limitations in Bhosari Pune"></amp-img>
         <div class="image-overlay"></div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
+        <!-- BRAND HEADER -->
+        <div class="brand-header">
+          <amp-img src="https://img1.wsimg.com/isteam/ip/97a87c93-346c-4ff0-a383-de326f1fc3fb/Charwak%20Logo.png/:/rs=w:150,h:100,cg:true,m/cr=w:150,h:100/qt=q:95" width="36" height="36" layout="fixed" alt="Charwak Deshpande Brand Logo"></amp-img>
+          <span class="brand-name">Charwak Deshpande</span>
+        </div>
         <div class="text-container">
           <div class="badge">Financial Consultant Insights Near You</div>
-          <p class="brand-name-line">Charwak Deshpande | 25+ Years of Experience in Finance</p>
+          <p class="brand-name-line">25+ Years of Experience in Finance</p>
           <h2>Consult a Financial Consultant Near Bhosari to Fix Cash Flow Instantly</h2>
           <p>Even highly active workshops near Bhosari struggle when GST processing fees, commercial operational costs, and raw material expenses come due before corporate client payments clear. A qualified financial consultant in your locality can streamline your operating balance with fast unsecured loan options.</p>
 
@@ -877,16 +919,21 @@
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <!-- SLIDE 3 -->
+    <!-- ===== SLIDE 3 ===== -->
     <amp-story-page id="page-3" auto-advance-after="7s">
       <amp-story-grid-layer template="fill">
         <amp-img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=720&h=1280&q=80" width="360" height="720" layout="fill" alt="CNC machinery setup utilizing collateral free loan infusions from Bhosari loan brokers"></amp-img>
         <div class="image-overlay"></div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
+        <!-- BRAND HEADER -->
+        <div class="brand-header">
+          <amp-img src="https://img1.wsimg.com/isteam/ip/97a87c93-346c-4ff0-a383-de326f1fc3fb/Charwak%20Logo.png/:/rs=w:150,h:100,cg:true,m/cr=w:150,h:100/qt=q:95" width="36" height="36" layout="fixed" alt="Charwak Deshpande Brand Logo"></amp-img>
+          <span class="brand-name">Charwak Deshpande</span>
+        </div>
         <div class="text-container">
           <div class="badge">Trusted Loan Brokers Network in Your Locality</div>
-          <p class="brand-name-line">Charwak Deshpande | 25+ Years of Experience in Finance</p>
+          <p class="brand-name-line">25+ Years of Experience in Finance</p>
           <h2>Avoid Bank Hurdles: Work with Top Loan Brokers Near Bhosari</h2>
           <p>Over 100+ production facilities nearby Bhosari rely on professional loan brokers near your area to acquire unsecured working capital lines from ₹10 to ₹45 Lakhs. Benefit from fast 5-day processing with transparent, competitive regional terms.</p>
 
@@ -900,16 +947,21 @@
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <!-- SLIDE 4 -->
+    <!-- ===== SLIDE 4 ===== -->
     <amp-story-page id="page-4" auto-advance-after="8s">
       <amp-story-grid-layer template="fill">
         <amp-img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=720&h=1280&q=80" width="360" height="720" layout="fill" alt="Reviewing financial logs for industrial capital utilization with Bhosari financial consultant"></amp-img>
         <div class="image-overlay"></div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
+        <!-- BRAND HEADER -->
+        <div class="brand-header">
+          <amp-img src="https://img1.wsimg.com/isteam/ip/97a87c93-346c-4ff0-a383-de326f1fc3fb/Charwak%20Logo.png/:/rs=w:150,h:100,cg:true,m/cr=w:150,h:100/qt=q:95" width="36" height="36" layout="fixed" alt="Charwak Deshpande Brand Logo"></amp-img>
+          <span class="brand-name">Charwak Deshpande</span>
+        </div>
         <div class="text-container">
           <div class="badge">Loan Brokers Recommendation Near You</div>
-          <p class="brand-name-line">Charwak Deshpande | 25+ Years of Experience in Finance</p>
+          <p class="brand-name-line">25+ Years of Experience in Finance</p>
           <h2>Ideal Uses Approved by Loan Brokers for Your Bhosari Business</h2>
           <p>Our network of experienced loan brokers near your locality simplifies funding for key business demands:<br>✓ Fast Raw Steel &amp; Bulk Material Procurement<br>✓ Manufacturing Machinery Repair &amp; Tooling Upgrades<br>✓ Timely Factory Labor Payroll Settlements<br>✓ Resolving Immediate GST and Business Tax Invoices</p>
 
@@ -919,16 +971,21 @@
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <!-- SLIDE 5 -->
+    <!-- ===== SLIDE 5 ===== -->
     <amp-story-page id="page-5" auto-advance-after="8s">
       <amp-story-grid-layer template="fill">
         <amp-img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=720&h=1280&q=80" width="360" height="720" layout="fill" alt="Evaluating business qualification indicators for industrial loans in Bhosari"></amp-img>
         <div class="image-overlay"></div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
+        <!-- BRAND HEADER -->
+        <div class="brand-header">
+          <amp-img src="https://img1.wsimg.com/isteam/ip/97a87c93-346c-4ff0-a383-de326f1fc3fb/Charwak%20Logo.png/:/rs=w:150,h:100,cg:true,m/cr=w:150,h:100/qt=q:95" width="36" height="36" layout="fixed" alt="Charwak Deshpande Brand Logo"></amp-img>
+          <span class="brand-name">Charwak Deshpande</span>
+        </div>
         <div class="text-container">
           <div class="badge">Loan Agents Checklist in Your Locality</div>
-          <p class="brand-name-line">Charwak Deshpande | 25+ Years of Experience in Finance</p>
+          <p class="brand-name-line">25+ Years of Experience in Finance</p>
           <h2>Eligibility Criteria Outlined by Loan Agents Near Bhosari</h2>
           <p>To ensure a hassle-free process, local loan agents near your area require the following baseline metrics for your business:<br>✓ Minimum 2+ years of active industrial GST registration<br>✓ Positive monthly bank transaction history<br>✓ Profitable P&L statements for past 2 years<br>✓ Clear financial standing (No defaults)</p>
 
@@ -938,16 +995,21 @@
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <!-- SLIDE 6 -->
+    <!-- ===== SLIDE 6 ===== -->
     <amp-story-page id="page-6" auto-advance-after="10s">
       <amp-story-grid-layer template="fill">
         <amp-img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=720&h=1280&q=80" width="360" height="720" layout="fill" alt="Financial consultant discussing capital options with Bhosari enterprise manager"></amp-img>
         <div class="image-overlay"></div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
+        <!-- BRAND HEADER -->
+        <div class="brand-header">
+          <amp-img src="https://img1.wsimg.com/isteam/ip/97a87c93-346c-4ff0-a383-de326f1fc3fb/Charwak%20Logo.png/:/rs=w:150,h:100,cg:true,m/cr=w:150,h:100/qt=q:95" width="36" height="36" layout="fixed" alt="Charwak Deshpande Brand Logo"></amp-img>
+          <span class="brand-name">Charwak Deshpande</span>
+        </div>
         <div class="text-container">
           <div class="badge">Expert Financial Consultant Near Bhosari</div>
-          <p class="brand-name-line">Charwak Deshpande | 25+ Years of Experience in Finance</p>
+          <p class="brand-name-line">25+ Years of Experience in Finance</p>
           <h2>Consult an Unsecured Loan Financial Consultant in Your Locality Today</h2>
           <p>Leverage 25+ years of MSME industrial lending experience. Connect with a trusted financial consultant near Bhosari for a free credit eligibility check with zero processing fees. Discover your best funding path in your locality today.</p>
 
@@ -961,16 +1023,21 @@
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <!-- SLIDE 7: Internal Links & Final CTA -->
+    <!-- ===== SLIDE 7: Internal Links & Final CTA ===== -->
     <amp-story-page id="page-7" auto-advance-after="10s">
       <amp-story-grid-layer template="fill">
         <amp-img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=720&h=1280&q=80" width="360" height="720" layout="fill" alt="Pune business districts and industrial hubs"></amp-img>
         <div class="image-overlay"></div>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
+        <!-- BRAND HEADER -->
+        <div class="brand-header">
+          <amp-img src="https://img1.wsimg.com/isteam/ip/97a87c93-346c-4ff0-a383-de326f1fc3fb/Charwak%20Logo.png/:/rs=w:150,h:100,cg:true,m/cr=w:150,h:100/qt=q:95" width="36" height="36" layout="fixed" alt="Charwak Deshpande Brand Logo"></amp-img>
+          <span class="brand-name">Charwak Deshpande</span>
+        </div>
         <div class="text-container">
           <div class="badge">Explore Other Locations Near Bhosari</div>
-          <p class="brand-name-line">Charwak Deshpande | 25+ Years of Experience in Finance</p>
+          <p class="brand-name-line">25+ Years of Experience in Finance</p>
           <h2>Business Loans Across Pune Region Near You</h2>
           <p>Looking for funding outside Bhosari? We serve major industrial and IT hubs across Pune. Select your location below:</p>
 
