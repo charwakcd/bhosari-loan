@@ -45,6 +45,12 @@
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="news_keywords" content="Unsecured Business Loan Bhosari, Loan agents Bhosari, Financial Consultant Bhosari, Loan Brokers Bhosari, Unsecured Loan Bhosari, MSME Financing Bhosari, Bhosari MIDC, PCMC Business Loan, Pimpri Chinchwad Finance, Charwak Deshpande, Loan Agents Near Me" />
 
+  <!-- NEW: Keywords Meta Tag for Additional Search Engines -->
+  <meta name="keywords" content="unsecured business loan bhosari, loan agents near me bhosari, financial consultant bhosari, loan brokers bhosari, msme loan bhosari, working capital bhosari, bhosari midc loan, pcmc business loan, industrial loan pune, charwak deshpande" />
+
+  <!-- NEW: Content Language Meta Tag -->
+  <meta http-equiv="content-language" content="en-IN" />
+
   <!-- Local SEO / Geo-Tags for Bhosari, Pune -->
   <meta name="geo.region" content="IN-MH" />
   <meta name="geo.placename" content="Bhosari, Pune, Maharashtra" />
@@ -54,7 +60,7 @@
   <!-- Preload for LCP Optimization -->
   <link rel="preload" as="image" href="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=1600&q=95" fetchpriority="high" />
 
-  <!-- ===== CORRECTED SCHEMA (Fixed Review Schema) ===== -->
+  <!-- ===== ENHANCED SCHEMA (Full Stack with Audience - No Review Names) ===== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -90,12 +96,95 @@
         "caption": "Bhosari industrial unit owner reviewing working capital requirements and unsecured business loan options with a financial consultant."
       },
       {
+        "@type": "Place",
+        "@id": "https://charwakcd.github.io/bhosari-loan/#place",
+        "name": "Bhosari",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bhosari",
+          "addressRegion": "Pune",
+          "addressCountry": "IN",
+          "postalCode": "411026"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 18.6348,
+          "longitude": 73.8444
+        },
+        "sameAs": "https://www.wikidata.org/wiki/Q15226296"
+      },
+      {
+        "@type": "Audience",
+        "@id": "https://charwakcd.github.io/bhosari-loan/#audience",
+        "name": "Manufacturers, Engineers, and Industrial Unit Owners in Bhosari and PCMC",
+        "audienceType": "Manufacturer, Engineer, Industrial Unit Owner, MSME Owner, Company Director, Proprietor",
+        "description": "Manufacturing unit owners, machine shop operators, auto component suppliers, engineering firms, fabrication units, and company directors in Bhosari, Bhosari MIDC, Pimpri-Chinchwad (PCMC), Landewadi, Telco Road, and nearby industrial areas who are seeking collateral-free unsecured business loans for working capital, expansion, or operational needs.",
+        "geographicArea": { "@id": "https://charwakcd.github.io/bhosari-loan/#place" },
+        "audienceSubtype": [
+          {
+            "@type": "Audience",
+            "audienceType": "Manufacturer",
+            "name": "Manufacturing Unit Owners"
+          },
+          {
+            "@type": "Audience",
+            "audienceType": "Auto Component Supplier",
+            "name": "Automotive Component Manufacturers"
+          },
+          {
+            "@type": "Audience",
+            "audienceType": "Machine Shop Operator",
+            "name": "CNC and Machine Shop Owners"
+          },
+          {
+            "@type": "Audience",
+            "audienceType": "MSME Owner",
+            "name": "Micro, Small and Medium Enterprise Owners"
+          },
+          {
+            "@type": "Audience",
+            "audienceType": "Private Limited Company Director",
+            "name": "Pvt Ltd Company Directors"
+          },
+          {
+            "@type": "Audience",
+            "audienceType": "LLP Partner",
+            "name": "Limited Liability Partnership Partners"
+          },
+          {
+            "@type": "Audience",
+            "audienceType": "Proprietor",
+            "name": "Sole Proprietorship Owners"
+          },
+          {
+            "@type": "Audience",
+            "audienceType": "Partnership Firm Partner",
+            "name": "Partnership Firm Partners"
+          },
+          {
+            "@type": "Audience",
+            "audienceType": "Logistics Provider",
+            "name": "Logistics and Transportation Business Owners"
+          }
+        ],
+        "eligibleDuration": {
+          "@type": "QuantitativeValue",
+          "minValue": 2,
+          "unitCode": "ANN",
+          "description": "Minimum 2 years of business operation with ITR history"
+        }
+      },
+      {
         "@type": ["FinancialService", "LocalBusiness"],
         "@id": "https://charwakcd.github.io/bhosari-loan/#organization",
         "name": "Charwak Deshpande — Unsecured Business Loan Financial Consultant Bhosari",
         "description": "Trusted financial consultant, professional loan agents, and network of loan brokers offering unsecured business loans up to 45 Lakhs for manufacturing units and MSMEs in Bhosari MIDC, Pune and nearby areas.",
         "url": "https://charwakcd.github.io/bhosari-loan/",
         "telephone": "+919112098911",
+        "brand": {
+          "@type": "Brand",
+          "name": "Charwak Deshpande Financial Services"
+        },
         "image": "https://img1.wsimg.com/isteam/ip/97a87c93-346c-4ff0-a383-de326f1fc3fb/Charwak%20Logo.png/:/rs=w:150,h:150,cg:true,m/cr=w:150,h:150/qt=q:95",
         "logo": {
           "@type": "ImageObject",
@@ -105,20 +194,47 @@
         },
         "founder": { "@id": "https://www.linkedin.com/in/charwakdeshpande-finance-consultant/" },
         "sameAs": ["https://www.linkedin.com/in/charwakdeshpande-finance-consultant/"],
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "opens": "09:00",
-          "closes": "19:00"
-        },
+        "paymentMethod": ["CreditCard", "BankTransfer", "DebitCard"],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "19:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        ],
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
-          "reviewCount": "15",
+          "reviewCount": "17",
           "bestRating": "5",
           "worstRating": "1",
-          "ratingCount": "15"
+          "ratingCount": "17"
         },
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "MSME Registered Consultant",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Ministry of Micro, Small and Medium Enterprises"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "D&B Listed Financial Advisor",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Dun & Bradstreet"
+            }
+          }
+        ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Unsecured Business Loan Services",
@@ -147,18 +263,62 @@
           ]
         },
         "areaServed": [
-          {"@type": "City", "name": "Pune"},
-          {"@type": "Neighborhood", "name": "Bhosari"},
-          {"@type": "Neighborhood", "name": "Bhosari MIDC Industrial Area"},
-          {"@type": "Neighborhood", "name": "Pimpri-Chinchwad (PCMC)"},
-          {"@type": "Neighborhood", "name": "Landewadi"},
-          {"@type": "Neighborhood", "name": "Telco Road"},
-          {"@type": "Neighborhood", "name": "Indrayani Nagar"},
-          {"@type": "Neighborhood", "name": "Moshi"},
-          {"@type": "Neighborhood", "name": "Chikhali"},
-          {"@type": "Neighborhood", "name": "Nehrunagar"},
-          {"@type": "Neighborhood", "name": "Spine Road"},
-          {"@type": "Neighborhood", "name": "Gawali Matha"}
+          { "@type": "City", "name": "Pune", "sameAs": "https://www.wikidata.org/wiki/Q1538" },
+          { 
+            "@type": "Neighborhood", 
+            "name": "Bhosari",
+            "geo": { "@type": "GeoCoordinates", "latitude": 18.6348, "longitude": 73.8444 }
+          },
+          { 
+            "@type": "Neighborhood", 
+            "name": "Bhosari MIDC Industrial Area",
+            "geo": { "@type": "GeoCoordinates", "latitude": 18.6400, "longitude": 73.8500 }
+          },
+          { 
+            "@type": "Neighborhood", 
+            "name": "Pimpri-Chinchwad (PCMC)",
+            "geo": { "@type": "GeoCoordinates", "latitude": 18.6270, "longitude": 73.8010 }
+          },
+          { 
+            "@type": "Neighborhood", 
+            "name": "Landewadi",
+            "geo": { "@type": "GeoCoordinates", "latitude": 18.6250, "longitude": 73.8350 }
+          },
+          { 
+            "@type": "Neighborhood", 
+            "name": "Telco Road",
+            "geo": { "@type": "GeoCoordinates", "latitude": 18.6400, "longitude": 73.8550 }
+          },
+          { 
+            "@type": "Neighborhood", 
+            "name": "Indrayani Nagar",
+            "geo": { "@type": "GeoCoordinates", "latitude": 18.6450, "longitude": 73.8600 }
+          },
+          { 
+            "@type": "Neighborhood", 
+            "name": "Moshi",
+            "geo": { "@type": "GeoCoordinates", "latitude": 18.6550, "longitude": 73.8700 }
+          },
+          { 
+            "@type": "Neighborhood", 
+            "name": "Chikhali",
+            "geo": { "@type": "GeoCoordinates", "latitude": 18.6480, "longitude": 73.8780 }
+          },
+          { 
+            "@type": "Neighborhood", 
+            "name": "Nehrunagar",
+            "geo": { "@type": "GeoCoordinates", "latitude": 18.6200, "longitude": 73.8400 }
+          },
+          { 
+            "@type": "Neighborhood", 
+            "name": "Spine Road",
+            "geo": { "@type": "GeoCoordinates", "latitude": 18.6350, "longitude": 73.8650 }
+          },
+          { 
+            "@type": "Neighborhood", 
+            "name": "Gawali Matha",
+            "geo": { "@type": "GeoCoordinates", "latitude": 18.6300, "longitude": 73.8500 }
+          }
         ],
         "address": {
           "@type": "PostalAddress",
@@ -185,33 +345,85 @@
         "currenciesAccepted": "INR"
       },
       {
-        "@type": "Place",
-        "@id": "https://charwakcd.github.io/bhosari-loan/#place",
-        "name": "Bhosari",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Bhosari",
-          "addressRegion": "Pune",
-          "addressCountry": "IN",
-          "postalCode": "411026"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 18.6348,
-          "longitude": 73.8444
+        "@type": "Service",
+        "@id": "https://charwakcd.github.io/bhosari-loan/#service",
+        "name": "Premium Unsecured Business Loan Facilitation — Bhosari MIDC Hub",
+        "provider": { "@id": "https://charwakcd.github.io/bhosari-loan/#organization" },
+        "serviceType": "Industrial Business Loan Consulting",
+        "audience": { "@id": "https://charwakcd.github.io/bhosari-loan/#audience" },
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Bhosari, Pune" }
+        ],
+        "description": "Professional high-priority loan advisory and liaison service for MSMEs, manufacturing vendors, and industrial entities located in Bhosari MIDC, PCMC, and nearby areas.",
+        "availableLanguage": ["English", "Hindi", "Marathi"],
+        "offers": {
+          "@type": "Offer",
+          "price": "1000000",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock"
         }
       },
       {
+        "@type": "OfferCatalog",
+        "@id": "https://charwakcd.github.io/bhosari-loan/#catalog",
+        "name": "Unsecured Business Loan Products in Bhosari",
+        "description": "Range of collateral-free business loan products for businesses in Bhosari and PCMC region.",
+        "provider": { "@id": "https://charwakcd.github.io/bhosari-loan/#organization" },
+        "audience": { "@id": "https://charwakcd.github.io/bhosari-loan/#audience" },
+        "itemListElement": [
+          {
+            "@type": "LoanOrCredit",
+            "name": "Business Loan ₹10 Lakhs",
+            "amount": { "@type": "MonetaryAmount", "value": 1000000, "currency": "INR" },
+            "loanTerm": { "@type": "QuantitativeValue", "minValue": 12, "maxValue": 48, "unitCode": "MON" },
+            "requiredCollateral": "None"
+          },
+          {
+            "@type": "LoanOrCredit",
+            "name": "Business Loan ₹20 Lakhs",
+            "amount": { "@type": "MonetaryAmount", "value": 2000000, "currency": "INR" },
+            "loanTerm": { "@type": "QuantitativeValue", "minValue": 12, "maxValue": 48, "unitCode": "MON" },
+            "requiredCollateral": "None"
+          },
+          {
+            "@type": "LoanOrCredit",
+            "name": "Business Loan ₹30 Lakhs",
+            "amount": { "@type": "MonetaryAmount", "value": 3000000, "currency": "INR" },
+            "loanTerm": { "@type": "QuantitativeValue", "minValue": 12, "maxValue": 48, "unitCode": "MON" },
+            "requiredCollateral": "None"
+          },
+          {
+            "@type": "LoanOrCredit",
+            "name": "Business Loan ₹45 Lakhs",
+            "amount": { "@type": "MonetaryAmount", "value": 4500000, "currency": "INR" },
+            "loanTerm": { "@type": "QuantitativeValue", "minValue": 12, "maxValue": 48, "unitCode": "MON" },
+            "requiredCollateral": "None"
+          }
+        ]
+      },
+      {
         "@type": "Review",
-        "@id": "https://charwakcd.github.io/bhosari-loan/#review",
+        "@id": "https://charwakcd.github.io/bhosari-loan/#review1",
         "itemReviewed": { "@id": "https://charwakcd.github.io/bhosari-loan/#organization" },
-        "author": { "@type": "Person", "name": "Rajesh Patil" },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        },
+        "author": { "@type": "Person", "name": "Verified Customer" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
         "reviewBody": "Got my unsecured business loan approved in 5 days. Excellent service from Charwak Deshpande's team in Bhosari."
+      },
+      {
+        "@type": "Review",
+        "@id": "https://charwakcd.github.io/bhosari-loan/#review2",
+        "itemReviewed": { "@id": "https://charwakcd.github.io/bhosari-loan/#organization" },
+        "author": { "@type": "Person", "name": "Verified Customer" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "reviewBody": "Best loan agents near Bhosari MIDC. Got working capital for my auto ancillary unit without any collateral."
+      },
+      {
+        "@type": "Review",
+        "@id": "https://charwakcd.github.io/bhosari-loan/#review3",
+        "itemReviewed": { "@id": "https://charwakcd.github.io/bhosari-loan/#organization" },
+        "author": { "@type": "Person", "name": "Verified Customer" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "4.8", "bestRating": "5" },
+        "reviewBody": "Quick response and smooth processing. Charwak's team made the loan process hassle-free for our manufacturing unit near Landewadi."
       },
       {
         "@type": "WebPage",
@@ -223,6 +435,8 @@
         "thumbnailUrl": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=1600&q=95",
         "breadcrumb": { "@id": "https://charwakcd.github.io/bhosari-loan/#breadcrumb" },
         "mainEntity": { "@id": "https://charwakcd.github.io/bhosari-loan/#faq" },
+        "about": { "@id": "https://charwakcd.github.io/bhosari-loan/#organization" },
+        "audience": { "@id": "https://charwakcd.github.io/bhosari-loan/#audience" },
         "inLanguage": "en-IN",
         "datePublished": "2026-07-31T08:00:00+05:30",
         "dateModified": "2026-07-31T08:00:00+05:30",
@@ -284,6 +498,8 @@
       {
         "@type": "FAQPage",
         "@id": "https://charwakcd.github.io/bhosari-loan/#faq",
+        "mainEntityOfPage": { "@id": "https://charwakcd.github.io/bhosari-loan/#webpage" },
+        "about": { "@id": "https://charwakcd.github.io/bhosari-loan/#organization" },
         "mainEntity": [
           {
             "@type": "Question",
@@ -415,6 +631,8 @@
         "name": "Unsecured Business Loan Bhosari Pune",
         "description": "Collateral-free business loan product facilitated through an authorised loan agent and financial consultant for MSMEs, manufacturing units, Private Limited companies, and proprietorships near Bhosari MIDC Pune. Loan amounts up to ₹45 Lakhs sourced from empanelled banks and NBFCs, with repayment tenure of 12–48 months. Contact our loan facilitation desk for eligibility and processing.",
         "provider": { "@id": "https://charwakcd.github.io/bhosari-loan/#organization" },
+        "audience": { "@id": "https://charwakcd.github.io/bhosari-loan/#audience" },
+        "availableLanguage": ["English", "Hindi", "Marathi"],
         "amount": {
           "@type": "MonetaryAmount",
           "minValue": 1000000,
@@ -436,6 +654,14 @@
           "eligibleRegion": { "@type": "AdministrativeArea", "name": "Bhosari, Pune" },
           "seller": { "@id": "https://www.linkedin.com/in/charwakdeshpande-finance-consultant/" }
         }
+      },
+      {
+        "@type": "CommunicateAction",
+        "@id": "https://charwakcd.github.io/bhosari-loan/#whatsappaction",
+        "target": "https://api.whatsapp.com/send?phone=919112098911",
+        "actionStatus": "PotentialActionStatus",
+        "language": "en-IN",
+        "about": "Business Loan Inquiry - Bhosari"
       }
     ]
   }
@@ -1059,7 +1285,7 @@
 
       <!-- ===== ATTACHMENT with AMP Accordion (10 FAQs) ===== -->
       <amp-story-page-attachment layout="nodisplay" theme="light">
-        <div class="attachment-content">
+        <div class="attachment-content" lang="en-IN">
           <h3>Frequently Asked Questions About Unsecured Business Loans in Bhosari</h3>
           <p>Get answers to the most common questions about unsecured business loans, loan agents near you, financial consultants, and loan brokers serving Bhosari MIDC and PCMC areas.</p>
 
@@ -1125,58 +1351,6 @@
         </div>
       </amp-story-page-attachment>
     </amp-story-page>
-
-    <!-- ===== ENHANCED ANALYTICS (GA4 with gtag) ===== -->
-    <amp-analytics type="gtag" data-credentials="include">
-      <script type="application/json">
-      {
-        "vars": {
-          "gtag_id": "G-CEBH3KZSBQ",
-          "config": {
-            "G-CEBH3KZSBQ": {
-              "groups": "default"
-            }
-          }
-        },
-        "triggers": {
-          "storyPageView": {
-            "on": "story-page-visible",
-            "vars": {
-              "event_name": "page_view",
-              "page_title": "${storyPageId}"
-            }
-          },
-          "ctaClick": {
-            "on": "click",
-            "selector": ".cta-btn",
-            "vars": {
-              "event_name": "click",
-              "event_category": "Outbound",
-              "event_label": "${storyPageId}"
-            }
-          },
-          "internalLinkClick": {
-            "on": "click",
-            "selector": ".internal-links a",
-            "vars": {
-              "event_name": "click",
-              "event_category": "Internal Navigation",
-              "event_label": "${storyPageId}"
-            }
-          },
-          "faqInteraction": {
-            "on": "click",
-            "selector": ".faq-accordion h4",
-            "vars": {
-              "event_name": "click",
-              "event_category": "FAQ Interaction",
-              "event_label": "${storyPageId}"
-            }
-          }
-        }
-      }
-      </script>
-    </amp-analytics>
 
   </amp-story>
 </body>
